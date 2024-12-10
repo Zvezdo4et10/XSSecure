@@ -24,7 +24,7 @@ def clean_html(html_string: str) -> str:
     return cleaned_html
 
 
-example_html = ???
+example_html = input()
 
 cleaned_html = clean_html(example_html)
 print(cleaned_html)

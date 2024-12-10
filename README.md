@@ -1,3 +1,3 @@
 # XSSecure
 
-test
+Library for sanitization of HTML
