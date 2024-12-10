@@ -22,9 +22,3 @@ def clean_html(html_string: str) -> str:
         previous_html = cleaned_html
         cleaned_html = remove_malicious_tags_and_attributes(cleaned_html)
     return cleaned_html
-
-
-example_html = input()
-
-cleaned_html = clean_html(example_html)
-print(cleaned_html)

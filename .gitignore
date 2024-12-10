@@ -1,2 +1,5 @@
 .idea
 .DS_Store
+dist
+src/xssecure.egg-info
+src/xssecure/__pycache__
