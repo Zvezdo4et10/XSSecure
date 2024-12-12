@@ -17,7 +17,7 @@ def clean_html(html_string: str) -> str:
     cleaned_html = html_string
     previous_html = ""
 
-    # Повторяем очистку до стабилизации
+
     while cleaned_html != previous_html:
         previous_html = cleaned_html
         cleaned_html = remove_malicious_tags_and_attributes(cleaned_html)

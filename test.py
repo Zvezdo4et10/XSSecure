@@ -1,4 +1,5 @@
-from src.xssecure.sanitize import clean_html
+from src.sanitize import clean_html
+
 
 html = input()
 
