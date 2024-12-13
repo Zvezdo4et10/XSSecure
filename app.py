@@ -1,6 +1,6 @@
 import streamlit as st
 from style import container_style
-from src.sanitize import clean_html
+from src.xssecure.sanitize import clean_html
 
 st.markdown(container_style, unsafe_allow_html=True)
 st.title("XSSecure")

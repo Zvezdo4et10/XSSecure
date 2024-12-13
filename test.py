@@ -1,4 +1,4 @@
-from src.sanitize import clean_html
+from src import clean_html
 
 
 html = input()

@@ -4,3 +4,4 @@ dist
 src/xssecure.egg-info
 src/xssecure/__pycache__
 venv
+src/__pycache__/sanitize.cpython-39.pyc

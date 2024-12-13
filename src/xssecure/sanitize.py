@@ -1,16 +1,20 @@
+import os
+
 from bs4 import BeautifulSoup
 
 
 def clean_html(html_string: str) -> str:
+    base_path = os.path.dirname(__file__)
+
     def remove_malicious_tags_and_attributes(html: str) -> str:
         soup = BeautifulSoup(html, "html.parser")
-        with open('whitelist_tags.txt') as f:
+        with open(os.path.join(base_path, 'whitelist_tags.txt')) as f:
             whitelist_tags = f.readlines()
 
         for tag in soup(whitelist_tags):
             tag.decompose()
 
-        with open('whitelist_attributes.txt') as f:
+        with open(os.path.join(base_path, 'whitelist_attributes.txt')) as f:
             whitelist_attributes = f.readlines()
         for tag in soup.find_all(True):
             for attribute in whitelist_attributes:
